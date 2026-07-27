@@ -20,5 +20,13 @@ public class ChainFormating {
                 ------------------------
                 """.formatted(nombre,edad,salario);
         System.out.println(mensaje);
+        System.out.printf("""
+                %nPerson Details:
+                ------------------------
+                \tName: %s
+                \tAge: %d
+                \tSalary: %.2f
+                ------------------------
+                """,nombre, edad, salario);
     }
 }
